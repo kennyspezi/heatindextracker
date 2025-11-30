@@ -1,8 +1,15 @@
-# urban heat island effect tracker
-A heat index & surface temperature tracker that compares change vs time in global warming between zipcodes in urban areas. Currently semi-working for Houston, TX.
+# Urban Heat Island Effect Tracker
 
-I pulled granules from nasa earthdata's satellite data and mapped it to coordinates (in a .csv) representing zip codes in QGIS.
+A heat index & surface temperature tracker that compares temperature changes over time between ZIP codes in urban areas. Currently semi-functional for Houston, TX.
 
-I plan to add support for urbanized areas in north america with a more automated process, more accurate readings, and maybe even implement an ai or api to generate a summary about what infrastructure or policies could be contributed to the rate of change in the urban heat island effect, quality of life, and then an overall summary for the most effective practices.
+## Data Sources
+
+I pulled granules from NASA Earthdata's satellite data and mapped it to coordinates representing zip codes using QGIS. The processed data is stored as .csv files in the `data/` directory.
+
+## Future Plans
+
+I plan to add support for urbanized areas in North America with a more automated process, more accurate readings, and maybe even implement an AI or API to generate a summary about what infrastructure or policies could be contributed to the rate of change in the urban heat island effect, quality of life, and then an overall summary for the most effective practices.
+
+## Project Origin
 
 This started as a project for ENGI 1331 at the University of Houston in Spring 2025.

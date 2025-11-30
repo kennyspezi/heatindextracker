@@ -1,8 +1,12 @@
+% Add function path
+addpath(fullfile(fileparts(fileparts(mfilename('fullpath'))), 'functions'));
+
 % LOAD ALL DATA
-H14 = readtable('Output2014.csv'); 
-H16 = readtable('Output2016.csv'); %present me is hoping future me is pleased with the
-H20 = readtable('Output2020.csv'); %dataset we mined excruciatingly for in qgis
-H24 = readtable('Output2024.csv');
+data_dir = fullfile(fileparts(fileparts(fileparts(mfilename('fullpath')))), 'data', 'processed');
+H14 = readtable(fullfile(data_dir, 'Output2014.csv')); 
+H16 = readtable(fullfile(data_dir, 'Output2016.csv')); %present me is hoping future me is pleased with the
+H20 = readtable(fullfile(data_dir, 'Output2020.csv')); %dataset we mined excruciatingly for in qgis
+H24 = readtable(fullfile(data_dir, 'Output2024.csv'));
 
 % STemp -- Surface Temperature
 % QHumid -- Specific Humidity
@@ -108,9 +112,10 @@ H24.NSTemp = ((H24.STemp - min(H24.STemp))) / (max(H24.STemp) - min(H24.STemp));
 % dcm = datacursormode(gcf);
 % set(dcm, 'Enable', 'on', 'UpdateFcn', @(src, event) showHeatIndex(event, heatIndex2020Map, heatIndex20));
 
-save('Houston2014.mat','H14');
-save('Houston2016.mat','H16');
-save('Houston2020.mat','H20');
-save('Houston2024.mat','H24');
+raw_dir = fullfile(fileparts(fileparts(fileparts(mfilename('fullpath')))), 'data', 'raw');
+save(fullfile(raw_dir, 'Houston2014.mat'),'H14');
+save(fullfile(raw_dir, 'Houston2016.mat'),'H16');
+save(fullfile(raw_dir, 'Houston2020.mat'),'H20');
+save(fullfile(raw_dir, 'Houston2024.mat'),'H24');
 
 disp('done');
