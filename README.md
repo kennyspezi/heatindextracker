@@ -9,7 +9,7 @@ I pulled granules from NASA Earthdata's satellite data and mapped it to coordina
 ## Future Plans
 
 Check out these issues and their associated sub-issues:
-[![help wanted issues](https://img.shields.io/github/issues/ForkTheCity/heatindextracker/help%20wanted)](https://github.com/ForkTheCity/heatindextracker/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![help wanted issues](https://img.shields.io/github/issues/ForkTheCity/heatindextracker/help%20wanted)](https://github.com/ForkTheCity/heatindextracker/issues?q=is%3Aissue%20state%3Aopen%20sort%3Acreated-asc%20label%3A%22help%20wanted%22)
 
 Proposed app functionality: Download satellite data -> Attach to ZIP codes -> Analyze ZIP codes -> Webapp
 
