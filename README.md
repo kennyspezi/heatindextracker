@@ -8,6 +8,9 @@ I pulled granules from NASA Earthdata's satellite data and mapped it to coordina
 
 ## Future Plans
 
+Check out these issues and their associated sub-issues:
+[![help wanted issues](https://img.shields.io/github/issues/ForkTheCity/heatindextracker/help%20wanted)](https://github.com/ForkTheCity/heatindextracker/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+
 I plan to add support for urbanized areas in North America with a more automated process, more accurate readings, and maybe even implement an AI or API to generate a summary about what infrastructure or policies could be contributed to the rate of change in the urban heat island effect, quality of life, and then an overall summary for the most effective practices.
 
 ## Project Origin
